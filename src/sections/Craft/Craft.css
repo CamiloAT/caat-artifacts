@@ -1,0 +1,146 @@
+.craft {
+  position: relative;
+  min-height: 100vh;
+  padding: var(--space-3xl) var(--gutter);
+  overflow: hidden;
+}
+
+.craft__content {
+  position: relative;
+  z-index: 1;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.craft__header {
+  margin-bottom: var(--space-xl);
+}
+
+.craft__act {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 400;
+  color: var(--accent-primary);
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  margin-bottom: var(--space-md);
+}
+
+.craft__title {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  font-weight: 300;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin-bottom: var(--space-md);
+}
+
+.craft__divider {
+  width: 60px;
+  height: 1px;
+  background: var(--accent-primary);
+  transform-origin: left;
+}
+
+.craft__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-lg) var(--space-xl);
+  margin-bottom: var(--space-2xl);
+}
+
+.craft__skill {
+  padding-bottom: var(--space-md);
+}
+
+.craft__skill-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: var(--space-sm);
+}
+
+.craft__skill-name {
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  font-weight: 400;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+}
+
+.craft__skill-category {
+  font-family: var(--font-mono);
+  font-size: 0.55rem;
+  font-weight: 400;
+  color: var(--text-muted);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.craft__skill-bar {
+  width: 100%;
+  height: 2px;
+  background: var(--bg-elevated);
+  overflow: hidden;
+}
+
+.craft__skill-fill {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+  transform-origin: left;
+}
+
+.craft__philosophy {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.craft__quote {
+  padding: var(--space-xl);
+  border: 1px solid var(--border);
+  position: relative;
+}
+
+.craft__quote::before {
+  content: '"';
+  position: absolute;
+  top: -0.5rem;
+  left: 1.5rem;
+  font-family: var(--font-display);
+  font-size: 4rem;
+  color: var(--accent-primary);
+  opacity: 0.3;
+  line-height: 1;
+}
+
+.craft__quote-text {
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--accent-secondary);
+  line-height: 1.6;
+  margin-bottom: var(--space-md);
+}
+
+.craft__quote-attr {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  letter-spacing: 0.1em;
+}
+
+@media (max-width: 768px) {
+  .craft {
+    padding: var(--space-xl) var(--gutter);
+  }
+
+  .craft__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+}

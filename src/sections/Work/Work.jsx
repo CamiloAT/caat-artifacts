@@ -56,15 +56,17 @@ const Work = () => {
     <section id="work" className="work" ref={sectionRef}>
       <div className="work__content">
         <motion.div className="work__header" style={{ y: headerY, opacity: headerOpacity }}>
-          <motion.span
-            className="work__act"
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+          <motion.div
+            className="work__eyebrow"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-100px' }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.8 }}
           >
-            ACT III
-          </motion.span>
+            <span className="work__eyebrow-line" />
+            <span className="work__eyebrow-text">ACT III</span>
+            <span className="work__eyebrow-line" />
+          </motion.div>
           <motion.h2
             className="work__title"
             initial={{ opacity: 0, y: 30 }}
@@ -74,13 +76,6 @@ const Work = () => {
           >
             The Work
           </motion.h2>
-          <motion.div
-            className="work__divider"
-            initial={{ scaleX: 0 }}
-            whileInView={{ scaleX: 1 }}
-            viewport={{ once: true, margin: '-100px' }}
-            transition={{ duration: 1, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-          />
         </motion.div>
 
         <div className="work__projects">

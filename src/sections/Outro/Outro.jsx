@@ -25,15 +25,17 @@ const Outro = () => {
     <section id="outro" className="outro" ref={sectionRef}>
       <div className="outro__content">
         <motion.div className="outro__header" style={{ y, opacity }}>
-          <motion.span
-            className="outro__act"
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+          <motion.div
+            className="outro__eyebrow"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-100px' }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.8 }}
           >
-            ACT V
-          </motion.span>
+            <span className="outro__eyebrow-line" />
+            <span className="outro__eyebrow-text">ACT V</span>
+            <span className="outro__eyebrow-line" />
+          </motion.div>
           <motion.h2
             className="outro__title"
             initial={{ opacity: 0, y: 30 }}
@@ -43,13 +45,6 @@ const Outro = () => {
           >
             Let's Create
           </motion.h2>
-          <motion.div
-            className="outro__divider"
-            initial={{ scaleX: 0 }}
-            whileInView={{ scaleX: 1 }}
-            viewport={{ once: true, margin: '-100px' }}
-            transition={{ duration: 1, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-          />
         </motion.div>
 
         <div className="outro__grid">

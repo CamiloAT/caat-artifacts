@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import './Hero.css'
 
-const TAGLINE = 'Ingeniero de Sistemas · Arquitecto de Experiencias Digitales'
+const TAGLINE = 'Ingeniero en Sistemas · Desarrollador Fullstack'
 
 const Hero = () => {
   const [revealed, setRevealed] = useState(false)

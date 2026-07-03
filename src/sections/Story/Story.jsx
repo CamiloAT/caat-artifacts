@@ -21,15 +21,17 @@ const Story = () => {
 
       <div className="story__content">
         <motion.div className="story__header" style={{ opacity }}>
-          <motion.span
-            className="story__act"
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+          <motion.div
+            className="story__eyebrow"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-100px' }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.8 }}
           >
-            ACT II
-          </motion.span>
+            <span className="story__eyebrow-line" />
+            <span className="story__eyebrow-text">ACT II</span>
+            <span className="story__eyebrow-line" />
+          </motion.div>
           <motion.h2
             className="story__title"
             initial={{ opacity: 0, y: 30 }}
@@ -37,15 +39,8 @@ const Story = () => {
             viewport={{ once: true, margin: '-100px' }}
             transition={{ duration: 0.8, delay: 0.1 }}
           >
-            The Story
+            About Me
           </motion.h2>
-          <motion.div
-            className="story__divider"
-            initial={{ scaleX: 0 }}
-            whileInView={{ scaleX: 1 }}
-            viewport={{ once: true, margin: '-100px' }}
-            transition={{ duration: 1, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-          />
         </motion.div>
 
         <div className="story__grid">

@@ -26,15 +26,17 @@ const Craft = () => {
     <section id="craft" className="craft" ref={sectionRef}>
       <div className="craft__content">
         <motion.div className="craft__header" style={{ y }}>
-          <motion.span
-            className="craft__act"
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+          <motion.div
+            className="craft__eyebrow"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-100px' }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.8 }}
           >
-            ACT IV
-          </motion.span>
+            <span className="craft__eyebrow-line" />
+            <span className="craft__eyebrow-text">ACT IV</span>
+            <span className="craft__eyebrow-line" />
+          </motion.div>
           <motion.h2
             className="craft__title"
             initial={{ opacity: 0, y: 30 }}
@@ -44,13 +46,6 @@ const Craft = () => {
           >
             The Craft
           </motion.h2>
-          <motion.div
-            className="craft__divider"
-            initial={{ scaleX: 0 }}
-            whileInView={{ scaleX: 1 }}
-            viewport={{ once: true, margin: '-100px' }}
-            transition={{ duration: 1, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-          />
         </motion.div>
 
         <div className="craft__grid">

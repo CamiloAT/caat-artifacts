@@ -4,6 +4,7 @@ import bytedentalLogo from '../../assets/projects/byte-dental/bytedental-logo.pn
 import kiruLogo from '../../assets/projects/kiru/kiru-logo.png'
 import deckroyaleLogo from '../../assets/projects/deck-royale/deck-royale-logo.png'
 import penguinLogo from '../../assets/projects/emperator-penguin-survival-sim/emperator-penguir-survival-sim-logo.png'
+import injectfillLogo from '../../assets/projects/inject-and-fill/inject-and-fill-logo.png'
 import './Work.css'
 
 const PROJECTS = [
@@ -108,16 +109,23 @@ const PROJECTS = [
   },
   {
     id: 5,
-    title: 'Portafolio CAAT',
-    category: 'Frontend · React · Framer Motion',
+    title: 'Inject and Fill',
+    category: 'Extensión · Chrome · JavaScript',
     year: '2026',
-    description: 'Portafolio personal cinematográfico con animaciones scroll-driven.',
-    fullDescription: 'Sitio web portafolio personal con estética cinematográfica. Construido con React y Framer Motion para animaciones scroll-driven, preloader con countdown, partículas flotantes, dock de navegación y diseño responsive. Paleta oscura con acentos ámbar.',
-    accent: '#c4956a',
-    tags: ['React', 'Framer Motion', 'Vite', 'CSS'],
-    github: 'https://github.com/CamiloAT/caat-artifacts',
+    description: 'Extensión de navegador que automatiza el rellenado de formularios con perfiles personalizados.',
+    fullDescription: 'Inject and Fill es una extensión de navegador para Chrome, Edge y Brave que automatiza el rellenado de formularios con perfiles personalizados. Detecta campos de formulario y botones en cualquier página web, permite mapearlos a valores específicos y ejecutar toda la secuencia con un solo clic, soportando inputs de texto, selects, checkboxes, radio buttons y clics en botones.\n\nNació de la necesidad de rellenar formularios de forma rápida y directamente en el navegador. Fue mi primera toma de contacto con el desarrollo de extensiones de navegador, explorando las capacidades de Manifest V3, el uso de side panels, content scripts para inyectar scripts en páginas web y chrome.storage.local para persistencia de datos. Incluye detección inteligente de campos, selector visual de elementos, dropdowns personalizados, edición de perfiles con drag-and-drop y motor de ejecución secuencial o simultáneo con simulación de eventos de frameworks como React, Angular y Vue.',
+    logo: injectfillLogo,
+    accent: '#2563eb',
+    tags: ['Chrome Extension', 'Manifest V3', 'JavaScript', 'HTML', 'CSS'],
+    collaborators: [],
+    github: 'https://github.com/CamiloAT/inject-and-fill',
     demo: '',
-    images: ['/placeholder-1.svg', '/placeholder-2.svg', '/placeholder-3.svg'],
+    images: [
+      '/projects/inject-and-fill/app-photo-1.webp',
+      '/projects/inject-and-fill/app-photo-2.webp',
+      '/projects/inject-and-fill/app-photo-3.webp',
+      '/projects/inject-and-fill/app-photo-4.webp',
+    ],
   },
 ]
 

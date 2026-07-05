@@ -31,6 +31,7 @@ function HomePage() {
 
 function App() {
   const [loading, setLoading] = useState(true)
+  const [stripsVisible, setStripsVisible] = useState(false)
 
   useEffect(() => {
     if (loading) {
@@ -43,9 +44,16 @@ function App() {
     }
   }, [loading])
 
+  useEffect(() => {
+    if (!loading && !stripsVisible) {
+      const timer = setTimeout(() => setStripsVisible(true), 2200)
+      return () => clearTimeout(timer)
+    }
+  }, [loading, stripsVisible])
+
   return (
     <BrowserRouter>
-      <div className="app">
+      <div className={`app${stripsVisible ? ' app--strips' : ''}`}>
         <AnimatePresence>
           {loading && <Preloader onComplete={() => setLoading(false)} />}
         </AnimatePresence>

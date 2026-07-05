@@ -17,7 +17,8 @@
   width: 18px;
   z-index: 100;
   pointer-events: none;
-  opacity: 0.22;
+  opacity: 0;
+  transition: opacity 0.8s ease;
   background:
     repeating-linear-gradient(
       to bottom,
@@ -26,8 +27,7 @@
       transparent 6px,
       transparent 16px
     );
-  mask-image: linear-gradient(to bottom, transparent 0%, black 5%, black 95%, transparent 100%);
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 5%, black 95%, transparent 100%);
+
 }
 
 .app::before {
@@ -40,4 +40,11 @@
   right: 0;
   border-left: 4px solid rgba(196, 149, 106, 1);
   border-right: 4px solid rgba(196, 149, 106, 1);
+}
+
+.app--strips::before,
+.app--strips::after {
+  opacity: 0.22;
+  mask-image: linear-gradient(to bottom, transparent 0%, black 5%, black 95%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 5%, black 95%, transparent 100%);
 }

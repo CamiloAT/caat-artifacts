@@ -3,6 +3,7 @@ import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion'
 import bytedentalLogo from '../../assets/projects/byte-dental/bytedental-logo.png'
 import kiruLogo from '../../assets/projects/kiru/kiru-logo.png'
 import deckroyaleLogo from '../../assets/projects/deck-royale/deck-royale-logo.png'
+import penguinLogo from '../../assets/projects/emperator-penguin-survival-sim/emperator-penguir-survival-sim-logo.png'
 import './Work.css'
 
 const PROJECTS = [
@@ -83,16 +84,27 @@ const PROJECTS = [
   },
   {
     id: 4,
-    title: 'Flux Studio',
-    category: 'Creative Dev · WebGL',
-    year: '2024',
-    description: 'Herramienta de visualización musical con audio-reactive graphics.',
-    fullDescription: 'Herramienta de visualización musical con audio-reactive graphics. Experiencia inmersiva que sincroniza sonido y movimiento. Utiliza WebGL para renderizar geometrías 3D que responden al audio en tiempo real, creando una experiencia visual única para cada canción.',
-    accent: '#7c5cbf',
-    tags: ['Three.js', 'Web Audio API', 'GLSL', 'Vite'],
-    github: 'https://github.com/camiloat/flux-studio',
-    demo: '',
-    images: ['/placeholder-1.svg', '/placeholder-2.svg', '/placeholder-3.svg'],
+    title: 'Emperor Penguin Survival Sim',
+    category: 'Simulación · React · Three.js',
+    year: '2026',
+    description: 'Simulación basada en agentes del comportamiento de huddles de pingüinos emperador durante el invierno antártico.',
+    fullDescription: 'Emperor Penguin Survival Sim es una aplicación web de modelado basado en agentes (ABM) que simula el comportamiento de huddles de pingüinos emperador durante los 92 días del invierno antártico. El modelo captura la termindividual de cada pingüino, las dinámicas de rotación del huddle y el riesgo estocástico de pérdida de huevos y congelación en el hielo expuesto. Incluye un motor de simulación con agentes individuales que poseen temperatura corporal, reservas de grasa, energía y estado de vida, vista dual en 2D Canvas y 3D con Three.js, dashboard en tiempo real, gráficas históricas con Recharts, diagrama causal de fljo y documentación completa del modelo con ecuaciones y metodología PASSI.\n\nProyecto de asignatura de Simulación enfocado en sistemas multiagentes. Fue mi primer contacto con la librería Three.js, la cual me pareció muy interesante y versátil para muchos tipos de proyectos, desde visualizaciones científicas hasta experiencias inmersivas 3D.',
+    logo: penguinLogo,
+    accent: '#f97316',
+    tags: ['React', 'Three.js', 'Recharts', 'React Flow', 'Vite'],
+    collaborators: [
+      { name: 'Jose Luis Ortega Castillo', github: 'https://github.com/JoseOrtegaUPTC' },
+    ],
+    github: 'https://github.com/CamiloAT/emperator-penguin-survival-sim',
+    demo: 'https://emperator-penguin-survival-sim.vercel.app/',
+    images: [
+      '/projects/emperator-penguin-survival-sim/app-photo-1.webp',
+      '/projects/emperator-penguin-survival-sim/app-photo-2.webp',
+      '/projects/emperator-penguin-survival-sim/app-photo-3.webp',
+      '/projects/emperator-penguin-survival-sim/app-photo-4.webp',
+      '/projects/emperator-penguin-survival-sim/app-photo-5.webp',
+      '/projects/emperator-penguin-survival-sim/app-photo-6.webp',
+    ],
   },
   {
     id: 5,

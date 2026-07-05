@@ -12,7 +12,7 @@ const MORE_PROJECTS = [
     description: 'Herramienta 100% local y segura que audita tus seguidores de Instagram directamente en el navegador.',
     fullDescription: 'UnfollowSpy es una herramienta 100% local y segura que audita los seguidores de Instagram directamente en el navegador. El usuario sube su exportación oficial de Meta y la app cruza las listas de seguidores y seguidos al instante, sin contraseñas, sin servidores, sin riesgo de baneos. Incluye análisis cruzado para detectar "traidores", seguimiento de tiempo con marcas UNIX, reportes PDF descargables, modo oscuro con persistencia en localStorage, ordenamiento y búsqueda inteligente, y un tutorial interactivo de 22 pasos.\n\nNació de una necesidad personal, quería ver quién lo dejaba de seguir en Instagram pero no había herramientas gratuitas o que no implicaran baneos de la cuenta. Fue el primer proyecto personal más allá de lo académico, y enseñó lo que significa construir algo desde cero para resolver un problema real.',
     logo: '/projects/unfollow-spy/unfollow-spy-logo.png',
-    accent: '#e1306c',
+    accent: 'linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888)',
     tags: ['React', 'Vite', 'jsPDF', 'Lucide', 'React Router'],
     collaborators: [],
     github: 'https://github.com/CamiloAT/UnfollowSpy',
@@ -23,6 +23,25 @@ const MORE_PROJECTS = [
       '/projects/unfollow-spy/app-photo-3.webp',
       '/projects/unfollow-spy/app-photo-4.webp',
       '/projects/unfollow-spy/app-photo-5.webp',
+    ],
+  },
+  {
+    id: 'snake-game',
+    title: 'Snake Game',
+    category: 'Desktop · Java · Swing',
+    year: '2023',
+    description: 'Juego clasico de Snake con dificultad progresiva, persistencia de puntajes y UI personalizada en Swing.',
+    fullDescription: 'Implementacion clasica del juego Snake en Java con dificultad progresiva, sistema de puntajes persistentes y una interfaz grafica construida desde cero con Swing. Incluye tres niveles de dificultad, velocidad progresiva, dashboard de historial y componentes UI personalizados.\n\nA pesar de que no fue el primero que desarrollo en Java, es un proyecto al que le tengo mucho cariño. Absolutamente todo fue escrito solo por mi, cada linea, cada palabra, cada decision fue desarrollada exclusivamente por mi. Lo recuerdo como el primer proyecto importante que hice.',
+    logo: '/projects/snake-game/snake-game-logo.png',
+    accent: '#1e40af',
+    tags: ['Java', 'Swing', 'Gson', 'JSON'],
+    collaborators: [],
+    github: 'https://github.com/CamiloAT/snake-game',
+    demo: '',
+    images: [
+      '/projects/snake-game/app-photo-1.webp',
+      '/projects/snake-game/app-photo-2.webp',
+      '/projects/snake-game/app-photo-3.webp',
     ],
   },
   {
@@ -153,6 +172,7 @@ const Projects = () => {
               transition={{ duration: 0.5, delay: index * 0.08 }}
               style={{ '--project-accent': project.accent }}
             >
+              <div className="projects-page__item-line" />
               <div className="projects-page__item-left">
                 <span className="projects-page__item-number">
                   {String(index + 1).padStart(2, '0')}

@@ -605,8 +605,11 @@
   }
 
   .work__project {
-    flex-direction: column;
-    gap: var(--space-lg);
+    grid-template-columns: 1fr;
+  }
+
+  .work__project-right {
+    display: none;
   }
 
   .work__project-index {
@@ -616,6 +619,12 @@
   .work__project-left {
     flex-direction: column;
     gap: 0;
+  }
+
+  .work__project-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-xs);
   }
 
   .work__modal {

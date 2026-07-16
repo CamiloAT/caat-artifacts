@@ -17,7 +17,7 @@ const PROJECTS = [
     tags: ['FastAPI', 'React', 'PostgreSQL', 'Docker', 'Firebase'],
     collaborators: [
       { name: 'Ronald Samir Molinares Sanabria', github: 'https://github.com/Ronaldmolinares' },
-      { name: 'Karen Juliana Pena Suarez', github: 'https://github.com/KarenSuarez4' },
+      { name: 'Karen Juliana Peña Suarez', github: 'https://github.com/KarenSuarez4' },
       { name: 'Maria Fernanda Sogamoso Rodriguez', github: 'https://github.com/maria-sogamoso' },
       { name: 'Lunna Karina Sosa Espitia', github: 'https://github.com/lunna21' },
     ],
